@@ -22,8 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
     flip.addEventListener("click",function(){
         //Math.random() to decide if it's heads or tails
         //1 = heads, 2 = tails
-        let coinFlip = Math.round(Math.random()*2)
-        if (coinFlip === 1)
+        let coinFlip = Math.round(Math.random()*3)
+        console.log(coinFlip)
+        if (coinFlip === 0 || coinFlip === 2)
         {
             //changes the image to heads
             coin.setAttribute("src","assets/images/penny-heads.jpg")
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //update tail percentage????
             //maybe have a function for updating for both
         }
-        else if (coinFlip === 2)
+        else if (coinFlip === 1|| coinFlip === 3)
         {
             //changes the image to tails
             coin.setAttribute("src","assets/images/penny-tails.jpg")
